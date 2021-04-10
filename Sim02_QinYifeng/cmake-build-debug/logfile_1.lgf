@@ -1,0 +1,39 @@
+Configuration File Data
+Monitor: 20 m/s cycle
+Processor: 10 m/s cycle
+Scanner: 25 m/s cycle
+Hard Drive: 15 m/s cycle
+Keyboard: 50 m/s cycle
+Memory: 30 m/s cycle
+Projector: 10 m/s cycle
+Logged to monitor and logfile_1.lgf
+
+Meta-Data Metrics
+P{run}11 - 110 ms
+M{allocate}2 - 60 ms
+O{monitor}7 - 140 ms
+I{harddrive}8 - 120 ms
+O{projector}20 - 200 ms
+P{run}6 - 60 ms
+O{projector}4 - 40 ms
+M{block}6 - 180 ms
+I{keyboard}17 - 850 ms
+M{block}4 - 120 ms
+P{run}5 - 50 ms
+P{run}5 - 50 ms
+O{harddrive}6 - 90 ms
+P{run}18 - 180 ms
+P{run}11 - 110 ms
+M{allocate}2 - 60 ms
+O{monitor}7 - 140 ms
+I{harddrive}8 - 120 ms
+O{projector}20 - 200 ms
+P{run}6 - 60 ms
+O{projector}4 - 40 ms
+M{block}6 - 180 ms
+I{keyboard}17 - 850 ms
+M{block}4 - 120 ms
+P{run}5 - 50 ms
+P{run}5 - 50 ms
+O{harddrive}6 - 90 ms
+P{run}18 - 180 ms

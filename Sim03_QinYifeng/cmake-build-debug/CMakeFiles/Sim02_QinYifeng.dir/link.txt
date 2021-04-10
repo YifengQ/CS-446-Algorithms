@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -g   CMakeFiles/Sim02_QinYifeng.dir/config.cpp.o CMakeFiles/Sim02_QinYifeng.dir/main.cpp.o CMakeFiles/Sim02_QinYifeng.dir/meta.cpp.o CMakeFiles/Sim02_QinYifeng.dir/PCB.cpp.o CMakeFiles/Sim02_QinYifeng.dir/simulation.cpp.o  -o Sim02_QinYifeng 
