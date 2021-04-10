@@ -1,0 +1,257 @@
+\hypertarget{classconfig}{}\section{config Class Reference}
+\label{classconfig}\index{config@{config}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconfig_ab1b245308f26ce7979e4c37e93869706}\label{classconfig_ab1b245308f26ce7979e4c37e93869706}} 
+\mbox{\hyperlink{classconfig_ab1b245308f26ce7979e4c37e93869706}{config}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor, initialize variables to zero. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classconfig_af2de59fd72d20777f086a19404740918}{set\+Data}} (string)
+\begin{DoxyCompactList}\small\item\em Going to open up the config file and start reading in the values It tests the values read in to test if they are valid. To test if they are valid, I declare the correct string without spaces so I don\textquotesingle{}t have to worry about extra white space. Then I use getline() to get the whole line as a string and remove the white space from it. That way I don\textquotesingle{}t have to worry about extra white space. If it is false I set a string with the error and flag it as an error. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classconfig_a83e282187a1be39b49284568053b5064}{log\+\_\+config\+\_\+monitor}} ()
+\begin{DoxyCompactList}\small\item\em Logs to Data to the terminal Checks it if was flagged as an error Runs until the end or finds and error flag If no errors, it prints the data saved If error it prints out the error and ends the function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classconfig_af5a46d231093e078b6356897f8fece32}{log\+\_\+config\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em Logs to Data to the File Same as the log to monitor only it cout to the file Opens file Checks it if was flagged as an error Runs until the end or finds and error flag If no errors, it prints the data saved If error it prints out the error and ends the function and closes file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classconfig_a8d6bac5f06d23f3cda348d8908384128}{get\+Monitor}} ()
+\begin{DoxyCompactList}\small\item\em gets monitor variable \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classconfig_a77cfd91eb08979cd773bc4b42e2f5c1c}{get\+Processor}} ()
+\begin{DoxyCompactList}\small\item\em gets processor variable \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classconfig_a6ee8004748fd4a64a611a3001509e878}{get\+Scanner}} ()
+\begin{DoxyCompactList}\small\item\em gets monitor variable \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classconfig_adeeb1fbdbaf55ecd2a912fd1446d0021}{get\+HD}} ()
+\begin{DoxyCompactList}\small\item\em gets hard\+\_\+drive variable \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classconfig_ae641db7341e7483714a27862e606e96d}{get\+Keyboard}} ()
+\begin{DoxyCompactList}\small\item\em gets keyboard variable \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classconfig_a8f679a43d549ab2e0bc66536ba62e6f8}{get\+Memory}} ()
+\begin{DoxyCompactList}\small\item\em gets memory variable \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classconfig_aae8fea6c3b76d240bbd9eadaa16fc11c}{get\+Projector}} ()
+\begin{DoxyCompactList}\small\item\em gets projector variable \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classconfig_a9c5684cef814969ee251614da14c5e9a}{get\+Path}} ()
+\begin{DoxyCompactList}\small\item\em gets file\+\_\+path variable \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classconfig_aed522f2e93dd2216c25b1877940c74f6}{get\+Meta\+Path}} ()
+\begin{DoxyCompactList}\small\item\em returns met\+\_\+path variable \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classconfig_a9bb4603f5922557dc69904e10fdb2b8a}{getlogto}} ()
+\item 
+string \mbox{\hyperlink{classconfig_af3601cc6eb1a184fb1cf746a883b8bb5}{junk}} (string)
+\begin{DoxyCompactList}\small\item\em Takes in a string and gets rid of unwanted invisible characters or white space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconfig_ad2758c6e44f2ff44e25c1f5602f2dd2a}\label{classconfig_ad2758c6e44f2ff44e25c1f5602f2dd2a}} 
+class {\bfseries meta}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classconfig_adeeb1fbdbaf55ecd2a912fd1446d0021}\label{classconfig_adeeb1fbdbaf55ecd2a912fd1446d0021}} 
+\index{config@{config}!getHD@{getHD}}
+\index{getHD@{getHD}!config@{config}}
+\subsubsection{\texorpdfstring{getHD()}{getHD()}}
+{\footnotesize\ttfamily int config\+::get\+HD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets hard\+\_\+drive variable 
+
+\begin{DoxyReturn}{Returns}
+hard\+\_\+drive 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconfig_ae641db7341e7483714a27862e606e96d}\label{classconfig_ae641db7341e7483714a27862e606e96d}} 
+\index{config@{config}!getKeyboard@{getKeyboard}}
+\index{getKeyboard@{getKeyboard}!config@{config}}
+\subsubsection{\texorpdfstring{getKeyboard()}{getKeyboard()}}
+{\footnotesize\ttfamily int config\+::get\+Keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets keyboard variable 
+
+\begin{DoxyReturn}{Returns}
+keyboard 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconfig_a9bb4603f5922557dc69904e10fdb2b8a}\label{classconfig_a9bb4603f5922557dc69904e10fdb2b8a}} 
+\index{config@{config}!getlogto@{getlogto}}
+\index{getlogto@{getlogto}!config@{config}}
+\subsubsection{\texorpdfstring{getlogto()}{getlogto()}}
+{\footnotesize\ttfamily int config\+::getlogto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns logto \mbox{\Hypertarget{classconfig_a8f679a43d549ab2e0bc66536ba62e6f8}\label{classconfig_a8f679a43d549ab2e0bc66536ba62e6f8}} 
+\index{config@{config}!getMemory@{getMemory}}
+\index{getMemory@{getMemory}!config@{config}}
+\subsubsection{\texorpdfstring{getMemory()}{getMemory()}}
+{\footnotesize\ttfamily int config\+::get\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets memory variable 
+
+\begin{DoxyReturn}{Returns}
+memory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconfig_aed522f2e93dd2216c25b1877940c74f6}\label{classconfig_aed522f2e93dd2216c25b1877940c74f6}} 
+\index{config@{config}!getMetaPath@{getMetaPath}}
+\index{getMetaPath@{getMetaPath}!config@{config}}
+\subsubsection{\texorpdfstring{getMetaPath()}{getMetaPath()}}
+{\footnotesize\ttfamily string config\+::get\+Meta\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns met\+\_\+path variable 
+
+\begin{DoxyReturn}{Returns}
+meta\+\_\+path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconfig_a8d6bac5f06d23f3cda348d8908384128}\label{classconfig_a8d6bac5f06d23f3cda348d8908384128}} 
+\index{config@{config}!getMonitor@{getMonitor}}
+\index{getMonitor@{getMonitor}!config@{config}}
+\subsubsection{\texorpdfstring{getMonitor()}{getMonitor()}}
+{\footnotesize\ttfamily int config\+::get\+Monitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets monitor variable 
+
+\begin{DoxyReturn}{Returns}
+monitor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconfig_a9c5684cef814969ee251614da14c5e9a}\label{classconfig_a9c5684cef814969ee251614da14c5e9a}} 
+\index{config@{config}!getPath@{getPath}}
+\index{getPath@{getPath}!config@{config}}
+\subsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily string config\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets file\+\_\+path variable 
+
+\begin{DoxyReturn}{Returns}
+file\+\_\+path 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconfig_a77cfd91eb08979cd773bc4b42e2f5c1c}\label{classconfig_a77cfd91eb08979cd773bc4b42e2f5c1c}} 
+\index{config@{config}!getProcessor@{getProcessor}}
+\index{getProcessor@{getProcessor}!config@{config}}
+\subsubsection{\texorpdfstring{getProcessor()}{getProcessor()}}
+{\footnotesize\ttfamily int config\+::get\+Processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets processor variable 
+
+\begin{DoxyReturn}{Returns}
+processor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconfig_aae8fea6c3b76d240bbd9eadaa16fc11c}\label{classconfig_aae8fea6c3b76d240bbd9eadaa16fc11c}} 
+\index{config@{config}!getProjector@{getProjector}}
+\index{getProjector@{getProjector}!config@{config}}
+\subsubsection{\texorpdfstring{getProjector()}{getProjector()}}
+{\footnotesize\ttfamily int config\+::get\+Projector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets projector variable 
+
+\begin{DoxyReturn}{Returns}
+projector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconfig_a6ee8004748fd4a64a611a3001509e878}\label{classconfig_a6ee8004748fd4a64a611a3001509e878}} 
+\index{config@{config}!getScanner@{getScanner}}
+\index{getScanner@{getScanner}!config@{config}}
+\subsubsection{\texorpdfstring{getScanner()}{getScanner()}}
+{\footnotesize\ttfamily int config\+::get\+Scanner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets monitor variable 
+
+\begin{DoxyReturn}{Returns}
+scanner 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconfig_af3601cc6eb1a184fb1cf746a883b8bb5}\label{classconfig_af3601cc6eb1a184fb1cf746a883b8bb5}} 
+\index{config@{config}!junk@{junk}}
+\index{junk@{junk}!config@{config}}
+\subsubsection{\texorpdfstring{junk()}{junk()}}
+{\footnotesize\ttfamily string config\+::junk (\begin{DoxyParamCaption}\item[{string}]{content }\end{DoxyParamCaption})}
+
+
+
+Takes in a string and gets rid of unwanted invisible characters or white space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string, without the characters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classconfig_af5a46d231093e078b6356897f8fece32}\label{classconfig_af5a46d231093e078b6356897f8fece32}} 
+\index{config@{config}!log\_config\_file@{log\_config\_file}}
+\index{log\_config\_file@{log\_config\_file}!config@{config}}
+\subsubsection{\texorpdfstring{log\_config\_file()}{log\_config\_file()}}
+{\footnotesize\ttfamily void config\+::log\+\_\+config\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Logs to Data to the File Same as the log to monitor only it cout to the file Opens file Checks it if was flagged as an error Runs until the end or finds and error flag If no errors, it prints the data saved If error it prints out the error and ends the function and closes file. 
+
+\mbox{\Hypertarget{classconfig_a83e282187a1be39b49284568053b5064}\label{classconfig_a83e282187a1be39b49284568053b5064}} 
+\index{config@{config}!log\_config\_monitor@{log\_config\_monitor}}
+\index{log\_config\_monitor@{log\_config\_monitor}!config@{config}}
+\subsubsection{\texorpdfstring{log\_config\_monitor()}{log\_config\_monitor()}}
+{\footnotesize\ttfamily void config\+::log\+\_\+config\+\_\+monitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Logs to Data to the terminal Checks it if was flagged as an error Runs until the end or finds and error flag If no errors, it prints the data saved If error it prints out the error and ends the function. 
+
+\mbox{\Hypertarget{classconfig_af2de59fd72d20777f086a19404740918}\label{classconfig_af2de59fd72d20777f086a19404740918}} 
+\index{config@{config}!setData@{setData}}
+\index{setData@{setData}!config@{config}}
+\subsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily bool config\+::set\+Data (\begin{DoxyParamCaption}\item[{string}]{conf }\end{DoxyParamCaption})}
+
+
+
+Going to open up the config file and start reading in the values It tests the values read in to test if they are valid. To test if they are valid, I declare the correct string without spaces so I don\textquotesingle{}t have to worry about extra white space. Then I use getline() to get the whole line as a string and remove the white space from it. That way I don\textquotesingle{}t have to worry about extra white space. If it is false I set a string with the error and flag it as an error. 
+
+\begin{DoxyReturn}{Returns}
+bool, if there is an error. It returns false if there is an error so the rest of the program doesn\textquotesingle{}t run. 
+\end{DoxyReturn}
+All the strings I test the inputs too.
+
+check mdf extension
+
+Checks if Configuration File is Empty
+
+Start Simulator Configuration File Line
+
+Version/\+Phase\+: /// Ignore because irrelevant
+
+File Path\+:
+
+check mdf extension
+
+Monitor display time \{msec\} Line
+
+The rest of the code down is the same, since it the lines are in order and there would be no missing lines
+
+Processor cycle time \{msec\}\+:
+
+Scanner cycle time \{msec\}\+:
+
+Hard drive cycle time \{msec\}\+:
+
+Keyboard cycle time \{msec\}\+:
+
+Memory cycle time \{msec\}\+:
+
+Projector cycle time \{msec\}\+:
+
+Log\+:
+
+Log File Path\+: // same as others 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+config.\+h\item 
+config.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,356 @@
+\hypertarget{classmeta}{}\section{meta Class Reference}
+\label{classmeta}\index{meta@{meta}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmeta_a63ad3379066eb6b7c8bf7a7ea9ee0783}\label{classmeta_a63ad3379066eb6b7c8bf7a7ea9ee0783}} 
+\mbox{\hyperlink{classmeta_a63ad3379066eb6b7c8bf7a7ea9ee0783}{meta}} ()
+\begin{DoxyCompactList}\small\item\em default constructor, sets integers to set values \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmeta_ae9afbaec8f5d1850634923cb991a63ad}{read\+Meta}} (\mbox{\hyperlink{classconfig}{config}} \&x)
+\begin{DoxyCompactList}\small\item\em Will take in the data from the config class and read the data from the meta file. It will then use the error checking to keep running or not. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmeta_aba0981f2594f4237707bd3c8b39eb132}{check\+Start}} (string)
+\begin{DoxyCompactList}\small\item\em It gets passed the start meta data string to check it all the spelling and formatting is correct. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmeta_afecfa24d119f15e3be5e01f37769a180}{save\+Data}} (string, \mbox{\hyperlink{classconfig}{config}} \&x)
+\begin{DoxyCompactList}\small\item\em Will take in the string and check if the data is correct. If correct it will save and calculate the data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmeta_a63b659832069e195bb2013b63dd9b4e7}{set\+App}} (string)
+\begin{DoxyCompactList}\small\item\em Takes the descriptor given and tests it to valid strings. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmeta_ae2ae12882e80f96acc82e0c55dba8fe6}{set\+Process}} (string, int, \mbox{\hyperlink{classconfig}{config}} \&x)
+\begin{DoxyCompactList}\small\item\em Takes the descriptor given and tests it to valid strings. If it is valid it will calculate the total cycles by accessing the cycles it needs from the other class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmeta_a64ab5feab351ac0611c9db92ac319e87}{set\+Input}} (string, int, \mbox{\hyperlink{classconfig}{config}} \&x)
+\begin{DoxyCompactList}\small\item\em Takes the descriptor given and tests it to valid strings. If it is valid it will calculate the total cycles by accessing the cycles it needs from the other class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmeta_adf22457ef8edc4d8d9cf61f077593ae1}{set\+Output}} (string, int, \mbox{\hyperlink{classconfig}{config}} \&x)
+\begin{DoxyCompactList}\small\item\em Takes the descriptor given and tests it to valid strings. If it is valid it will calculate the total cycles by accessing the cycles it needs from the other class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmeta_a7134e9c2093c85766728b2418dab6c36}{set\+Memory}} (string, int, \mbox{\hyperlink{classconfig}{config}} \&x)
+\begin{DoxyCompactList}\small\item\em Takes the descriptor given and tests it to valid strings. If it is valid it will calculate the total cycles by accessing the cycles it needs from the other class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmeta_a058e013c346255e0e29a6d8996a26d5d}{check\+Finish}} (string)
+\begin{DoxyCompactList}\small\item\em Takes the descriptor given and tests it to valid strings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmeta_ac2960b98bde11f9bbd438e81ebff9f4b}\label{classmeta_ac2960b98bde11f9bbd438e81ebff9f4b}} 
+void \mbox{\hyperlink{classmeta_ac2960b98bde11f9bbd438e81ebff9f4b}{print\+Meta}} ()
+\begin{DoxyCompactList}\small\item\em Prints the data up to and index point in terminal The string and cycle are stored in vector so it prints it out in a for loop If there is an error, there is an error index that the index compares itself to If they match that will end the printing. the variable index is the total amount of strings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmeta_a0ab4d89d4697d5b546bba28032ef218f}\label{classmeta_a0ab4d89d4697d5b546bba28032ef218f}} 
+void \mbox{\hyperlink{classmeta_a0ab4d89d4697d5b546bba28032ef218f}{print\+To\+File}} (\mbox{\hyperlink{classconfig}{config}} \&x)
+\begin{DoxyCompactList}\small\item\em Prints the data up to and index point in file The string and cycle are stored in vector so it prints it out in a for loop If there is an error, there is an error index that the index compares itself to If they match that will end the printing. the variable index is the total amount of strings. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classmeta_a5cf6aca232b3f8cfb979e385803167cd}{junk}} (string)
+\begin{DoxyCompactList}\small\item\em Takes in a string and gets rid of unwanted invisible characters or white space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmeta_a058e013c346255e0e29a6d8996a26d5d}\label{classmeta_a058e013c346255e0e29a6d8996a26d5d}} 
+\index{meta@{meta}!checkFinish@{checkFinish}}
+\index{checkFinish@{checkFinish}!meta@{meta}}
+\subsubsection{\texorpdfstring{checkFinish()}{checkFinish()}}
+{\footnotesize\ttfamily bool meta\+::check\+Finish (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})}
+
+
+
+Takes the descriptor given and tests it to valid strings. 
+
+\begin{DoxyReturn}{Returns}
+bool, if descriptor is valid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmeta_aba0981f2594f4237707bd3c8b39eb132}\label{classmeta_aba0981f2594f4237707bd3c8b39eb132}} 
+\index{meta@{meta}!checkStart@{checkStart}}
+\index{checkStart@{checkStart}!meta@{meta}}
+\subsubsection{\texorpdfstring{checkStart()}{checkStart()}}
+{\footnotesize\ttfamily bool meta\+::check\+Start (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})}
+
+
+
+It gets passed the start meta data string to check it all the spelling and formatting is correct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, if the string is valid or not 
+\end{DoxyReturn}
+if not, it is invalid and record error
+
+records index to print
+
+then it checks if \textquotesingle{}\{\textquotesingle{} comes after
+
+finds the position of the \textquotesingle{}\}\textquotesingle{}
+
+checks if there is a \textquotesingle{}\}\textquotesingle{}
+
+gets the descriptor between the \textquotesingle{}\{\textquotesingle{} and \textquotesingle{}\}\textquotesingle{}
+
+then gets the cycles after it
+
+gets rid of the ; at the end of cycles
+
+checks if there is any cycles
+
+checks if the cycle is a int value \mbox{\Hypertarget{classmeta_a5cf6aca232b3f8cfb979e385803167cd}\label{classmeta_a5cf6aca232b3f8cfb979e385803167cd}} 
+\index{meta@{meta}!junk@{junk}}
+\index{junk@{junk}!meta@{meta}}
+\subsubsection{\texorpdfstring{junk()}{junk()}}
+{\footnotesize\ttfamily string meta\+::junk (\begin{DoxyParamCaption}\item[{string}]{content }\end{DoxyParamCaption})}
+
+
+
+Takes in a string and gets rid of unwanted invisible characters or white space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content,string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string, without the characters 
+\end{DoxyReturn}
+had a problem with \textquotesingle{}/r\textquotesingle{} being in my lines so I decided to remove any
+
+erases the beginning because in my config file, all lines had character in front
+
+removes all the white space, so white space spacing doesn\textquotesingle{}t matter \mbox{\Hypertarget{classmeta_ae9afbaec8f5d1850634923cb991a63ad}\label{classmeta_ae9afbaec8f5d1850634923cb991a63ad}} 
+\index{meta@{meta}!readMeta@{readMeta}}
+\index{readMeta@{readMeta}!meta@{meta}}
+\subsubsection{\texorpdfstring{readMeta()}{readMeta()}}
+{\footnotesize\ttfamily void meta\+::read\+Meta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classconfig}{config}} \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Will take in the data from the config class and read the data from the meta file. It will then use the error checking to keep running or not. 
+
+Created by Yifen on 2/16/2019.
+\begin{DoxyParams}{Parameters}
+{\em x,class} & object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Will take class object so the class can access config data. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Will set give lines to the other functions to save data. 
+\end{DoxyPostcond}
+opens the file that was given in the config file
+
+checks to see if the file is empty
+
+if empty stores the error
+
+gives dummy varaible to the cycles
+
+gives the index of where the error is
+
+checks the start by getting that line
+
+removes all the spaces from the string
+
+removes the last character because in my files there was a carriage return;
+
+checks if the start line matches the correct format and spelling
+
+If not it store the error message
+
+gives dummy varaiable
+
+records the index for printing
+
+gets the first line of the meta data to pass to the function
+
+removes the last character in the string, my files had a carriage return at the end of string
+
+removes all the white space from the string
+
+finds the first semi colon which represents the end of a meta data
+
+then a temp variable stores the data for the meta data
+
+calls a function to see if the meta data is correct
+
+if not it stops the program
+
+if it is correct it erases the data from the whole line
+
+finds the next whole meta data by finding the semi colon
+
+then it stores that data in a temp string
+
+recurisve call until save data returns false, I pass the temp variable and the class
+
+check it the line is empty
+
+my program stored the las meta dat of each line twice so i deleted one
+
+gets a new line from the file
+
+if it got an empty line, it didn\textquotesingle{}t find finish data
+
+stores the error message
+
+if not an empty line it will keep getting data from the string
+
+will get another string from the original string
+
+will store it in another variable
+
+will get rid of that data
+
+closes the file \mbox{\Hypertarget{classmeta_afecfa24d119f15e3be5e01f37769a180}\label{classmeta_afecfa24d119f15e3be5e01f37769a180}} 
+\index{meta@{meta}!saveData@{saveData}}
+\index{saveData@{saveData}!meta@{meta}}
+\subsubsection{\texorpdfstring{saveData()}{saveData()}}
+{\footnotesize\ttfamily bool meta\+::save\+Data (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{\mbox{\hyperlink{classconfig}{config}} \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Will take in the string and check if the data is correct. If correct it will save and calculate the data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & \\
+\hline
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool, whether there is a error or not 
+\end{DoxyReturn}
+checks if the meta code is a valid one
+
+if valid it checks if there is a \textquotesingle{}\{\textquotesingle{} after
+
+finds the position of the \textquotesingle{}\}\textquotesingle{}
+
+checks that it found a \textquotesingle{}\}\textquotesingle{}
+
+gets the descriptor between \textquotesingle{}\{\textquotesingle{} and \textquotesingle{}\}\textquotesingle{}
+
+checks if descriptor is empty, if empty it errors out
+
+gets the cycles after \textquotesingle{}\}\textquotesingle{} in string form
+
+removes the \textquotesingle{};\textquotesingle{} from end of the string
+
+checks if string is empty
+
+checks if the the string has only integers. Makes sure its not negative
+
+turns the string into a int
+
+gets rid of the \textquotesingle{};\textquotesingle{} at end of string
+
+checks if the code is \textquotesingle{}A\textquotesingle{}
+
+if \textquotesingle{}A\textquotesingle{} calls function to check formatting and spelling
+
+if not valid it errors out
+
+checks if the code is \textquotesingle{}P\textquotesingle{}
+
+if valid calls function to check validity, and calculates the cycles total
+
+if error function returns -\/1 so if value is greater that means valid
+
+if valid it adds the string to the vector
+
+adds the total cycles to vector
+
+increments the index for printing
+
+else it errors out
+
+checks for \textquotesingle{}I\textquotesingle{}
+
+if valid calls function to check validity, and calculates the cycles total
+
+if error function returns -\/1 so if value is greater that means valid
+
+if valid it adds the string to the vector
+
+adds the total cycles to vector
+
+increments the index for printing
+
+else it errors out
+
+checks for \textquotesingle{}O\textquotesingle{} , same as above
+
+if valid calls function to check validity, and calculates the cycles total
+
+checks for \textquotesingle{}N\textquotesingle{} , same as above
+
+if valid calls function to check validity, and calculates the cycles total
+
+checks for \textquotesingle{}S\textquotesingle{}, this should contain the finish descriptor
+
+if valid calls function to check validity
+
+if it contains false end the function
+
+if not valid , error out \mbox{\Hypertarget{classmeta_a63b659832069e195bb2013b63dd9b4e7}\label{classmeta_a63b659832069e195bb2013b63dd9b4e7}} 
+\index{meta@{meta}!setApp@{setApp}}
+\index{setApp@{setApp}!meta@{meta}}
+\subsubsection{\texorpdfstring{setApp()}{setApp()}}
+{\footnotesize\ttfamily bool meta\+::set\+App (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})}
+
+
+
+Takes the descriptor given and tests it to valid strings. 
+
+\begin{DoxyReturn}{Returns}
+bool, if descriptor is valid 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmeta_a64ab5feab351ac0611c9db92ac319e87}\label{classmeta_a64ab5feab351ac0611c9db92ac319e87}} 
+\index{meta@{meta}!setInput@{setInput}}
+\index{setInput@{setInput}!meta@{meta}}
+\subsubsection{\texorpdfstring{setInput()}{setInput()}}
+{\footnotesize\ttfamily int meta\+::set\+Input (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{int}]{cyc,  }\item[{\mbox{\hyperlink{classconfig}{config}} \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Takes the descriptor given and tests it to valid strings. If it is valid it will calculate the total cycles by accessing the cycles it needs from the other class. 
+
+\begin{DoxyReturn}{Returns}
+bool, If invalid descriptor it will return -\/1 which flags it as invalid for the other function to handle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmeta_a7134e9c2093c85766728b2418dab6c36}\label{classmeta_a7134e9c2093c85766728b2418dab6c36}} 
+\index{meta@{meta}!setMemory@{setMemory}}
+\index{setMemory@{setMemory}!meta@{meta}}
+\subsubsection{\texorpdfstring{setMemory()}{setMemory()}}
+{\footnotesize\ttfamily int meta\+::set\+Memory (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{int}]{cyc,  }\item[{\mbox{\hyperlink{classconfig}{config}} \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Takes the descriptor given and tests it to valid strings. If it is valid it will calculate the total cycles by accessing the cycles it needs from the other class. 
+
+\begin{DoxyReturn}{Returns}
+bool, If invalid descriptor it will return -\/1 which flags it as invalid for the other function to handle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmeta_adf22457ef8edc4d8d9cf61f077593ae1}\label{classmeta_adf22457ef8edc4d8d9cf61f077593ae1}} 
+\index{meta@{meta}!setOutput@{setOutput}}
+\index{setOutput@{setOutput}!meta@{meta}}
+\subsubsection{\texorpdfstring{setOutput()}{setOutput()}}
+{\footnotesize\ttfamily int meta\+::set\+Output (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{int}]{cyc,  }\item[{\mbox{\hyperlink{classconfig}{config}} \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Takes the descriptor given and tests it to valid strings. If it is valid it will calculate the total cycles by accessing the cycles it needs from the other class. 
+
+\begin{DoxyReturn}{Returns}
+bool, If invalid descriptor it will return -\/1 which flags it as invalid for the other function to handle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmeta_ae2ae12882e80f96acc82e0c55dba8fe6}\label{classmeta_ae2ae12882e80f96acc82e0c55dba8fe6}} 
+\index{meta@{meta}!setProcess@{setProcess}}
+\index{setProcess@{setProcess}!meta@{meta}}
+\subsubsection{\texorpdfstring{setProcess()}{setProcess()}}
+{\footnotesize\ttfamily int meta\+::set\+Process (\begin{DoxyParamCaption}\item[{string}]{str,  }\item[{int}]{cyc,  }\item[{\mbox{\hyperlink{classconfig}{config}} \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Takes the descriptor given and tests it to valid strings. If it is valid it will calculate the total cycles by accessing the cycles it needs from the other class. 
+
+\begin{DoxyReturn}{Returns}
+bool, If invalid descriptor it will return -\/1 which flags it as invalid for the other function to handle 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+meta.\+h\item 
+meta.\+cpp\end{DoxyCompactItemize}
